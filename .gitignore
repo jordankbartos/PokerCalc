@@ -1,0 +1,7 @@
+# Author: Jordan Bartos
+# Date: August 10, 2019
+# Description: gitignore file for PokerCalc
+
+.o
+.obj
+.zip
