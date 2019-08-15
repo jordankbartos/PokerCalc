@@ -32,33 +32,33 @@ PokerCalc works with a greedy algorithm that works as follows:
 
 ```
 settlePayments(G(V,E))
-losers = ∅
-winners = ∅
-for each player in V
-    if player's value > 0
-        losers.push_back(player)
-    else
-        winners.push_back(player)
+    losers = ∅
+    winners = ∅
+    for each player in V
+        if player's value > 0
+            losers.push_back(player)
+        else
+            winners.push_back(player)
         
-make min-heap of losers
-make max-heap of winners
+    make min-heap of losers
+    make max-heap of winners
 
-currentLoser losers.get_max()
-losers.pop_max()
+    currentLoser losers.get_max()
+    losers.pop_max()
 
-while currentLoser's value != 0
-    currentWinner = winners.get_min()
-    winners.pop_min()
+    while currentLoser's value != 0
+        currentWinner = winners.get_min()
+        winners.pop_min()
+        
+        transferAmount = min(currentLoser's value, -(currentWinner's value))
+     
+        E(currentLoser, currentWinner) = transferAmount
+        currentLoser's value -= transferAmount
+        currentWinner's value += transferAmount
     
-    transferAmount = min(currentLoser's value, -(currentWinner's value))
-    
-    (currentLoser, currentWinner) = transferAmount
-    currentLoser's value -= transferAmount
-    currentWinner's value += transferAmount
-    
-    losers.add_heap(currentLoser)
-    winners.add_heap(currentWinner)
-    currentLoser = losers.get_max()
+        losers.add_heap(currentLoser)
+        winners.add_heap(currentWinner)
+        currentLoser = losers.get_max()
 ```
 
 <h6>Complexity</h6>
