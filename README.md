@@ -1,5 +1,7 @@
 <h1> PokerCalc </h1>
-A C++ console application that helps friends settle their poker debts at the end of a friendly game.
+A C++ console application that helps friends settle their poker debts at the end of a friendly game. The objective 
+of the program is to determine which payments need to be made between players at the end of a night of poker such that the 
+fewest number of transactions are made and all of the players pay what they owe or are paid what they are owed.
 
 [Try it on Repl.it here](https://repl.it/@jonnydmobile/PokerCalc) 
 
