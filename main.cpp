@@ -170,10 +170,12 @@ void addBuyInToPlayer(Game* game){
 
 bool splashScreen() {
     clearTheScreen();
+
     std::ifstream printFile;
     printFile.open("./views/titleScreen.txt");
-    
     printFileContents(printFile);
+    printFile.close();
+
     int input = getIntFromUser(1,2);
     if(input == 1) {
         return true;
@@ -181,5 +183,4 @@ bool splashScreen() {
     else {
         return false;
     }
-
 }
