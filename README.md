@@ -4,7 +4,7 @@ A C++ console application that helps friends settle their poker debts at the end
 [Try it on Repl.it here](https://repl.it/@jonnydmobile/PokerCalc) 
 
 <h3>The Reason for PokerCalc</h3>
-My friends and I have a weekly poker night in which we play friendly $1-buyin poker. Usually we end the night before any 
+My friends and I have a weekly poker night in which we play friendly $1-buy-in poker. Usually we end the night before any 
 one player has amassed all of the chips. At this point, we're left with a bit of a puzzle - figuring out who owes how much
 to whom. Thus, the necessity for PokerCalc was born.
 
